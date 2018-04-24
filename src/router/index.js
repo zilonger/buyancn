@@ -1,17 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Head from '@/components/Head'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min.js'
+import Home from '@/pages/home'
+import About from '@/pages/about'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'Head',
-      component: Head
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     }
   ]
 })

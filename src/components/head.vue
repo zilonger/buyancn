@@ -1,7 +1,16 @@
 <template>
-  <div class="col-9">
-    <p>{{msg}}</p>
-  </div>
+  <header class="row">
+    <div class="col-md-6">
+      <a href="/"><img src="http://via.placeholder.com/150x60" alt=""></a>
+    </div>
+    <div class="col-md-6">
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+      </ul>
+    </div>
+  </header>
 </template>
 
 <script>

@@ -11,9 +11,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "jquery": "^3.3.1",
+    "iview": "^2.13.1",
     "vue": "^2.5.2",
+    "vue-i18n": "^7.6.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

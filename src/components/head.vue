@@ -1,6 +1,6 @@
 <template>
-  <header class="row">
-    {{$t('message')}}
+  <header>
+    {{$t('greet')}}
   </header>
 </template>
 

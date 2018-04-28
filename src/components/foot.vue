@@ -1,5 +1,5 @@
 <template>
-  <div class="col-9">
+  <div>
     <p>{{msg}}</p>
   </div>
 </template>

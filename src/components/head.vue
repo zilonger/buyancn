@@ -3,7 +3,7 @@
     <Row>
         <Col :xs="24" :sm="12">
           <div class="logobox">
-            <img src="http://via.placeholder.com/320x60" alt="">
+            <a href="/"><img src="http://via.placeholder.com/320x60" alt=""></a>
             <div class="navicon" @click="switchNav">
               <Icon type="navicon-round"></Icon>
             </div>
@@ -25,7 +25,7 @@
                     <DropdownItem>繁体中文</DropdownItem>
                     <DropdownItem>English</DropdownItem>
                 </DropdownMenu>
-            </Dropdown>
+              </Dropdown>
             </li>
           </ul>
           <ul class="moblie_nav" v-show="navList">

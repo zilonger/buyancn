@@ -31,7 +31,7 @@
           </CarouselItem>
       </Carousel>
       <div class="blockwrap">
-        <Row type="flex" justify="center" :gutter="64">
+        <Row type="flex" justify="space-around">
           <Col :xs="24" :sm="10">
             <div class="infoblock">
               <h3 class="blocktit">公司简介 <a href="#">更多></a></h3>
@@ -121,5 +121,8 @@ export default {
   .addrpic{
     text-align: center;
     background-color: #455090;
+  }
+  .addrpic img {
+    max-width: 100%;
   }
 </style>

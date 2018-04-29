@@ -15,6 +15,7 @@ import localeZhTW from './multi-language/zhTW'
 import localeEn from './multi-language/en'
 
 import 'iview/dist/styles/iview.css'
+import './styles/main.css'
 
 Vue.use(VueI18n)
 Vue.use(iView)

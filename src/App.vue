@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Head></Head>
-    <router-view/>
+    <div class="content">
+      <router-view/>
+    </div>
     <Foot></Foot>
     <BackTop :height="150">
       <div class="backtop">
@@ -26,6 +28,14 @@ export default {
 
 // http://via.placeholder.com/350x150
 <style>
+#app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content{
+  flex: 1;
+}
 .backtop{
     background-color: rgba(0,0,0,.6);
     border-radius: 2px;

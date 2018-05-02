@@ -11,22 +11,23 @@
           :arrow="setting.arrow">
           <CarouselItem>
               <div class="demo-carousel swiper-item">
-                <img src="http://via.placeholder.com/1920x820" alt="">
+                <!-- <a href="#"><img src="http://via.placeholder.com/1920x820" alt=""></a> -->
+                <a href="#"><img src="../assets/images/banner_1.jpg" alt=""></a>
               </div>
           </CarouselItem>
           <CarouselItem>
               <div class="demo-carousel swiper-item">
-                <img src="http://via.placeholder.com/1920x820" alt="">
+                <a href="#"><img src="http://via.placeholder.com/1920x820" alt=""></a>
               </div>
           </CarouselItem>
           <CarouselItem>
               <div class="demo-carousel swiper-item">
-                <img src="http://via.placeholder.com/1920x820" alt="">
+                <a href="#"><img src="http://via.placeholder.com/1920x820" alt=""></a>
               </div>
           </CarouselItem>
           <CarouselItem>
               <div class="demo-carousel swiper-item">
-                <img src="http://via.placeholder.com/1920x820" alt="">
+                <a href="#"><img src="http://via.placeholder.com/1920x820" alt=""></a>
               </div>
           </CarouselItem>
       </Carousel>

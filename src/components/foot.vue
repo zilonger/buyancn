@@ -3,13 +3,13 @@
     <Row class="footcontent">
       <Col :xs="24" :sm="12">
         <ul class="footlist">
-          <li><a href="#">公司简介</a></li>
-          <li><a href="#">产品中心</a></li>
-          <li><a href="#">联系我们</a></li>
+          <li><a href="/about">公司简介</a></li>
+          <li><a href="/products">产品中心</a></li>
+          <li><a href="/contact">联系我们</a></li>
           <li>
             <Dropdown>
               <a href="javascript:void(0)">
-                语言切换
+                简体中文
                 <Icon type="arrow-down-b"></Icon>
               </a>
               <DropdownMenu slot="list">

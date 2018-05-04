@@ -3,7 +3,8 @@
     <Row>
         <Col :xs="24" :sm="12">
           <div class="logobox">
-            <a href="/"><img src="http://via.placeholder.com/320x60" alt=""></a>
+            <!-- <a href="/"><img src="http://via.placeholder.com/320x60" alt=""></a> -->
+            <a href="/"><img src="../assets/images/by-logo.png" alt=""></a>
             <div class="navicon" @click="switchNav">
               <Icon type="navicon-round"></Icon>
             </div>

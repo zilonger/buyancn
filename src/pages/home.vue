@@ -14,6 +14,7 @@
                 <a :href="item.link"><img :src="item.url" alt=""></a>
               </div>
           </CarouselItem>
+          <!-- http://via.placeholder.com/1920x820 -->
       </Carousel>
       <div class="blockwrap">
         <Row type="flex" justify="space-around">
@@ -47,7 +48,7 @@ export default {
     return {
       value3: 0,
       setting: {
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         dots: "inside",
         radiusDot: false,
@@ -57,15 +58,15 @@ export default {
       banners: [
         {
           link: "#",
-          url: "assets/images/banner_1.jpg"
+          url: "../../static/images/banner_3.jpg"
         },
         {
           link: "#",
-          url: "assets/images/banner_2.jpg"
+          url: "../../static/images/banner_1.jpg"
         },
         {
           link: "#",
-          url: "assets/images/banner_3.jpg"
+          url: "../../static/images/banner_2.jpg"
         }
       ]
     };

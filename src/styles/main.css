@@ -1,1 +1,31 @@
 /* global styles */
+.ivu-carousel-arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+}
+.ivu-carousel-dots-inside{
+    bottom: 13px;
+}
+.ivu-carousel-dots li button{
+    width: 24px;
+    height: 4px;
+    border-radius: 3px;
+}
+.ivu-carousel-dots li.ivu-carousel-active > button{
+    width: 32px;
+}
+.center-content{
+    margin: 0 auto;
+    max-width: 1170px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+.positions{
+    color: #86d102;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}

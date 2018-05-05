@@ -82,8 +82,8 @@ export default {
 .blockwrap {
   margin: 0 auto;
   max-width: 1170px;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 25px;
+  padding-bottom: 35px;
 }
 .infoblock {
   background-color: #ffffff;

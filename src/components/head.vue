@@ -12,6 +12,7 @@
         </Col>
         <Col :xs="24" :sm="12">
           <ul class="c_nav">
+            <li><a href="/">首页</a></li>
             <li><a href="/about">公司简介</a></li>
             <li><a href="/products">产品中心</a></li>
             <li><a href="/contact">联系我们</a></li>
@@ -30,10 +31,10 @@
             </li>
           </ul>
           <ul class="moblie_nav" v-show="navList">
-            <li><a href="#">公司简介</a></li>
-            <li><a href="#">产品中心</a></li>
-            <li><a href="#">联系我们</a></li>
-            <li>
+            <li class="nav-item"><a href="#">公司简介</a></li>
+            <li class="nav-item"><a href="#">产品中心</a></li>
+            <li class="nav-item"><a href="#">联系我们</a></li>
+            <li class="nav-item">
               <Dropdown>
                 <a href="javascript:void(0)">
                   语言切换
@@ -77,6 +78,11 @@ export default {
 }
 .logobox {
   position: relative;
+  height: 79px;
+}
+.logobox a{
+  display: inline-block;
+  margin-top: 9px;
 }
 .c_nav {
   display: flex;
@@ -94,13 +100,16 @@ export default {
   padding: 10px;
   position: relative;
 }
+.c_nav li a:hover {
+  color: #86d102;
+}
 .c_nav li a::before,
 .c_nav li a::after {
   position: absolute;
   left: 0;
   width: 100%;
   height: 2px;
-  background: #a0a0a0;
+  background: #86d102;
   content: "";
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
@@ -122,24 +131,29 @@ export default {
   height: auto;
   line-height: 39px;
 }
-.moblie_nav li {
+.moblie_nav .nav-item {
   display: block;
   list-style: none;
   text-align: left;
 }
-.moblie_nav li a {
+.moblie_nav .nav-item a {
+  display: block;
   font-size: 14px;
   color: #878787;
+  padding: 0 22px;
+}
+.moblie_nav .nav-item a:active {
+  color: #86d102;
 }
 .navicon {
   color: #878787;
-  font-size: 20px;
+  font-size: 28px;
   float: right;
-  padding: 5px;
+  padding: 5px 10px;
   position: absolute;
   top: 50%;
-  margin-top: -20px;
-  right: 20px;
+  margin-top: -26px;
+  right: 15px;
   display: none;
 }
 @media screen and (max-width: 767px) {

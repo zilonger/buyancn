@@ -1,15 +1,55 @@
 <template>
   <div>
-    <p>{{msg}}</p>
+    <Pagetop :bgimage="bgimg" :toptitle="title"></Pagetop>
+    <div class="center-content">
+      <h4 class="positions">
+        <Icon type="home"></Icon> 联系我们
+      </h4>
+      <div class="contact-info">
+        <Row type="flex" justify="space-around">
+          <Col :xs="24" :sm="10">
+            <img src="../../static/images/address.jpg" alt="" class="addr">
+          </Col>
+          <Col :xs="24" :sm="10">
+            <div class="addr-item">
+              <p class="itl">地址：</p>
+              <p>湖北省武汉市东湖高新技术开发区</p>
+            </div>
+            <div class="addr-item">
+              <p class="itl">邮编：</p>
+              <p>430205</p>
+            </div>
+            <div class="addr-item">
+              <p class="itl">联系人：</p>
+              <p>陈小姐</p>
+            </div>
+            <div class="addr-item">
+              <p class="itl">联系方式：</p>
+              <p>+86 13927440213</p>
+            </div>
+            <div class="addr-item">
+              <p class="itl">邮箱：</p>
+              <p>13927440213@163.com</p>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import Pagetop from '@/components/pagetop'
+
 export default {
   name: 'About',
+  components: {
+    Pagetop
+  },
   data () {
     return {
-      msg: 'contact us'
+      bgimg: '../../static/images/page_top3.jpg',
+      title: 'Contact Us'
     }
   }
 }
@@ -17,4 +57,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .contact-info {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  .addr {
+    width: 100%;
+  }
+  .addr-item{
+    display: flex;
+    padding: 10px 0;
+  }
+  .itl {
+    white-space: nowrap;
+  }
 </style>

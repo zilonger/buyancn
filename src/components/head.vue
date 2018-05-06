@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <Row>
-        <Col :xs="24" :sm="12">
+        <Col :xs="24" :sm="9">
           <div class="logobox">
             <!-- <a href="/"><img src="http://via.placeholder.com/320x60" alt=""></a> -->
             <a href="/"><img src="../assets/images/by-logo.png" alt=""></a>
@@ -10,7 +10,7 @@
             </div>
           </div>
         </Col>
-        <Col :xs="24" :sm="12">
+        <Col :xs="24" :sm="15">
           <ul class="c_nav">
             <li><a href="/">首页</a></li>
             <li><a href="/about">公司简介</a></li>

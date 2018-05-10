@@ -17,33 +17,38 @@
             <li><a href="/products">产品中心</a></li>
             <li><a href="/contact">联系我们</a></li>
             <li>
-              <Dropdown>
+              <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
-                  简体中文
+                  <span v-if="lang == 'zhCN'">简体中文</span>
+                  <span v-if="lang == 'zhTW'">繁体中文</span>
+                  <span v-if="lang == 'en'">English</span>
                   <Icon type="arrow-down-b"></Icon>
                 </a>
                 <DropdownMenu slot="list">
-                    <DropdownItem>简体中文</DropdownItem>
-                    <DropdownItem>繁体中文</DropdownItem>
-                    <DropdownItem>English</DropdownItem>
+                    <DropdownItem name="zhCN" v-if="lang != 'zhCN'">简体中文</DropdownItem>
+                    <DropdownItem name="zhTW" v-if="lang != 'zhTW'">繁体中文</DropdownItem>
+                    <DropdownItem name="en" v-if="lang != 'en'">English</DropdownItem>
                 </DropdownMenu>
               </Dropdown>
             </li>
           </ul>
           <ul class="moblie_nav" v-show="navList">
-            <li class="nav-item"><a href="#">公司简介</a></li>
-            <li class="nav-item"><a href="#">产品中心</a></li>
-            <li class="nav-item"><a href="#">联系我们</a></li>
+            <li class="nav-item"><a href="/">首页</a></li>
+            <li class="nav-item"><a href="/about">公司简介</a></li>
+            <li class="nav-item"><a href="/products">产品中心</a></li>
+            <li class="nav-item"><a href="/contact">联系我们</a></li>
             <li class="nav-item">
-              <Dropdown>
+              <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
-                  语言切换
+                  <span v-if="lang == 'zhCN'">简体中文</span>
+                  <span v-if="lang == 'zhTW'">繁体中文</span>
+                  <span v-if="lang == 'en'">English</span>
                   <Icon type="arrow-down-b"></Icon>
                 </a>
                 <DropdownMenu slot="list">
-                    <DropdownItem>简体中文</DropdownItem>
-                    <DropdownItem>繁体中文</DropdownItem>
-                    <DropdownItem>English</DropdownItem>
+                    <DropdownItem name="zhCN" v-if="lang != 'zhCN'">简体中文</DropdownItem>
+                    <DropdownItem name="zhTW" v-if="lang != 'zhTW'">繁体中文</DropdownItem>
+                    <DropdownItem name="en" v-if="lang != 'en'">English</DropdownItem>
                 </DropdownMenu>
             </Dropdown>
             </li>
@@ -58,12 +63,17 @@ export default {
   name: "Head",
   data() {
     return {
-      navList: false
+      navList: false,
+      lang: localStorage.getItem('b_locale') || 'zhCN'
     };
   },
   methods: {
     switchNav() {
       this.navList = !this.navList;
+    },
+    setLan (lan) {
+      localStorage.setItem('b_locale', lan)
+      window.location.reload()
     }
   }
 };

@@ -11,9 +11,10 @@
             <img src="../../static/images/address.jpg" alt="" class="addr">
           </Col>
           <Col :xs="24" :sm="10">
+            <div class="addr-item" style="font-weight: bold;">武汉市不言科技有限公司</div>
             <div class="addr-item">
               <p class="itl">地址：</p>
-              <p>湖北省武汉市东湖高新技术开发区</p>
+              <p>湖北省武汉市东湖新技术开发区光谷大道特1号<br>国际企业中心三期20栋12层30号</p>
             </div>
             <div class="addr-item">
               <p class="itl">邮编：</p>
@@ -25,11 +26,11 @@
             </div>
             <div class="addr-item">
               <p class="itl">联系方式：</p>
-              <p>+86 13927440213</p>
+              <p>+86 13297959213</p>
             </div>
             <div class="addr-item">
               <p class="itl">邮箱：</p>
-              <p>13927440213@163.com</p>
+              <p>3589781688@qq.com</p>
             </div>
           </Col>
         </Row>

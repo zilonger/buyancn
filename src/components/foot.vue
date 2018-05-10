@@ -7,31 +7,33 @@
           <li><a href="/about">公司简介</a></li>
           <li><a href="/products">产品中心</a></li>
           <li><a href="/contact">联系我们</a></li>
-          <li>
-            <Dropdown>
-              <a href="javascript:void(0)">
-                简体中文
-                <Icon type="arrow-down-b"></Icon>
-              </a>
-              <DropdownMenu slot="list">
-                  <DropdownItem>简体中文</DropdownItem>
-                  <DropdownItem>繁体中文</DropdownItem>
-                  <DropdownItem>English</DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
+          <li class="langs">
+            <Dropdown @on-click="setLan">
+                <a href="javascript:void(0)">
+                  <span v-if="lang == 'zhCN'">简体中文</span>
+                  <span v-if="lang == 'zhTW'">繁体中文</span>
+                  <span v-if="lang == 'en'">English</span>
+                  <Icon type="arrow-down-b"></Icon>
+                </a>
+                <DropdownMenu slot="list">
+                    <DropdownItem name="zhCN" v-if="lang != 'zhCN'">简体中文</DropdownItem>
+                    <DropdownItem name="zhTW" v-if="lang != 'zhTW'">繁体中文</DropdownItem>
+                    <DropdownItem name="en" v-if="lang != 'en'">English</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
           </li>
         </ul>
       </Col>
       <Col :xs="24" :sm="12">
         <div class="ftwrap">
           <h3 class="ft">不言科技</h3>
-          <a href="tel:13927440213" class="ft">
+          <a href="tel:13297959213" class="ft">
             <Icon type="ios-telephone"></Icon>
-            +86 13927440213
+            +86 13297959213
           </a>
-          <a href="mailto:13927440213@163.com" class="ft">
+          <a href="mailto:3589781688@qq.com" class="ft">
             <Icon type="ios-email"></Icon>
-            13927440213@163.com
+            3589781688@qq.com
           </a>
         </div>
       </Col>
@@ -46,7 +48,15 @@
 export default {
   name: "Foot",
   data() {
-    return {};
+    return {
+      lang: localStorage.getItem('b_locale') || 'zhCN'
+    };
+  },
+  methods: {
+    setLan (lan) {
+      localStorage.setItem('b_locale', lan)
+      window.location.reload()
+    }
   }
 };
 </script>
@@ -107,5 +117,8 @@ a.ft:hover {
 }
 .ft i {
   font-size: 16px;
+}
+.langs li {
+  line-height: 1.2;
 }
 </style>

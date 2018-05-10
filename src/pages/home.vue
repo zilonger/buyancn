@@ -20,15 +20,15 @@
         <Row type="flex" justify="space-around">
           <Col :xs="24" :sm="10">
             <div class="infoblock">
-              <h3 class="blocktit">公司简介 <a href="#">更多></a></h3>
-              <img src="http://via.placeholder.com/640x400" alt="">
+              <h3 class="blocktit">公司简介 <a href="javascript:void(0)">更多></a></h3>
+              <img src="../../static/images/intro.jpg" alt="">
               <p>武汉不言科技公司（Wuhan buyan Technology Co.Ltd）成立于2018年，我们专注于跨国B2C电子商务，深耕于Amazon网络平台，竭力自主开发优质产品将其销售到北美及欧洲国家并受到一致好评。</p>
             </div>
           </Col>
           <Col :xs="24" :sm="10">
             <div class="infoblock">
-              <h3 class="blocktit">产品中心 <a href="#">更多></a></h3>
-              <img src="http://via.placeholder.com/640x400" alt="">
+              <h3 class="blocktit">产品中心 <a href="javascript:void(0)">更多></a></h3>
+              <img src="../../static/images/pros.jpg" alt="">
               <p>公司主要经营的产品品类说明，我们的主要品类是厨房及家居，创建了厨房家居类自主品牌并且不断丰富和拓展新的产品品类，其它关于产品的文字。</p>
             </div>
           </Col>
@@ -57,15 +57,15 @@ export default {
       },
       banners: [
         {
-          link: "#",
+          link: "javascript:void(0)",
           url: "../../static/images/banner_3.jpg"
         },
         {
-          link: "#",
+          link: "javascript:void(0)",
           url: "../../static/images/banner_1.jpg"
         },
         {
-          link: "#",
+          link: "javascript:void(0)",
           url: "../../static/images/banner_2.jpg"
         }
       ]
@@ -101,6 +101,7 @@ export default {
   width: 100%;
   opacity: 0.6;
   transition: all 0.3s linear;
+  display: block;
 }
 .infoblock p {
   color: #3f424b;

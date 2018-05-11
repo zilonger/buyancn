@@ -13,9 +13,9 @@
         <Col :xs="24" :sm="15">
           <ul class="c_nav">
             <li><a href="/">首页</a></li>
-            <li><a href="/about">公司简介</a></li>
-            <li><a href="/products">产品中心</a></li>
-            <li><a href="/contact">联系我们</a></li>
+            <li><a href="/#/about">公司简介</a></li>
+            <li><a href="/#/products">产品中心</a></li>
+            <li><a href="/#/contact">联系我们</a></li>
             <li>
               <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
@@ -34,9 +34,9 @@
           </ul>
           <ul class="moblie_nav" v-show="navList">
             <li class="nav-item"><a href="/">首页</a></li>
-            <li class="nav-item"><a href="/about">公司简介</a></li>
-            <li class="nav-item"><a href="/products">产品中心</a></li>
-            <li class="nav-item"><a href="/contact">联系我们</a></li>
+            <li class="nav-item"><a href="/#/about">公司简介</a></li>
+            <li class="nav-item"><a href="/#/products">产品中心</a></li>
+            <li class="nav-item"><a href="/#/contact">联系我们</a></li>
             <li class="nav-item">
               <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">

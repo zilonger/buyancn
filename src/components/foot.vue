@@ -4,9 +4,9 @@
       <Col :xs="24" :sm="12">
         <ul class="footlist">
           <h4><a href="/">首页</a></h4>
-          <li><a href="/#/about">公司简介</a></li>
-          <li><a href="/#/products">产品中心</a></li>
-          <li><a href="/#/contact">联系我们</a></li>
+          <li><a href="/about">公司简介</a></li>
+          <li><a href="/products">产品中心</a></li>
+          <li><a href="/contact">联系我们</a></li>
           <li class="langs">
             <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">

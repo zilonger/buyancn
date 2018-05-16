@@ -22,7 +22,7 @@
             <div class="infoblock">
               <h3 class="blocktit">公司简介 <a href="/about">更多></a></h3>
               <img src="../../static/images/intro.jpg" alt="">
-              <p>武汉不言科技公司（Wuhan buyan Technology Co.Ltd）成立于2018年，我们专注于跨国B2C电子商务，深耕于Amazon网络平台，竭力自主开发优质产品将其销售到北美及欧洲国家并受到一致好评。</p>
+              <p>武汉不言科技公司（Wuhan buyan Technology Co.Ltd）成立于2018年，我们专注于跨国B2C电子商务，深耕于Amazon网络平台，创建了厨房家居类自主品牌并且不断丰富和拓展新的产品品类，竭力自主开发优质产品将其销售到北美及欧洲国家并受到一致好评。</p>
             </div>
           </Col>
           <Col :xs="24" :sm="10">
@@ -107,7 +107,8 @@ export default {
   color: #3f424b;
   padding: 10px 5px;
   line-height: 16px;
-  height: 68px;
+  height: 58px;
+  overflow: hidden;
 }
 .blocktit {
   color: #3f424b;

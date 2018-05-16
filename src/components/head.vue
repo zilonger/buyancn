@@ -16,7 +16,7 @@
             <li><a href="/about">公司简介</a></li>
             <li><a href="/products">产品中心</a></li>
             <li><a href="/contact">联系我们</a></li>
-            <li>
+            <li style="display: none">
               <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>
@@ -37,7 +37,7 @@
             <li class="nav-item"><a href="/about">公司简介</a></li>
             <li class="nav-item"><a href="/products">产品中心</a></li>
             <li class="nav-item"><a href="/contact">联系我们</a></li>
-            <li class="nav-item">
+            <li class="nav-item" style="display: none">
               <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>

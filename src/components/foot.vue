@@ -7,7 +7,7 @@
           <li><a href="/about">公司简介</a></li>
           <li><a href="/products">产品中心</a></li>
           <li><a href="/contact">联系我们</a></li>
-          <li class="langs">
+          <li class="langs" style="display: none">
             <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>

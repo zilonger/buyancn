@@ -3,7 +3,7 @@
     <Pagetop :bgimage="bgimg" :toptitle="title"></Pagetop>
     <div class="center-content">
       <h4 class="positions">
-        <Icon type="home"></Icon> 联系我们
+        <Icon type="home"></Icon> {{$t('contact.title')}}
       </h4>
       <div class="contact-info">
         <Row type="flex" justify="space-around">
@@ -11,25 +11,25 @@
             <img src="../../static/images/address.jpg" alt="" class="addr">
           </Col>
           <Col :xs="24" :sm="10">
-            <div class="addr-item" style="font-weight: bold;">武汉市不言科技有限公司</div>
+            <div class="addr-item" style="font-weight: bold;">{{$t('contact.companyName')}}</div>
             <div class="addr-item">
-              <p class="itl">地址：</p>
-              <p>湖北省武汉市东湖新技术开发区光谷大道特1号<br>国际企业中心三期20栋12层30号</p>
+              <p class="itl">{{$t('contact.address')}}</p>
+              <p>{{$t('contact.addressPart1')}}<br>{{$t('contact.addressPart2')}}</p>
             </div>
             <div class="addr-item">
-              <p class="itl">邮编：</p>
+              <p class="itl">{{$t('contact.zipcode')}}</p>
               <p>430205</p>
             </div>
             <div class="addr-item">
-              <p class="itl">联系人：</p>
-              <p>陈小姐</p>
+              <p class="itl">{{$t('contact.contactUser')}}</p>
+              <p>{{$t('contact.user')}}</p>
             </div>
             <div class="addr-item">
-              <p class="itl">联系方式：</p>
+              <p class="itl">{{$t('contact.contactType')}}</p>
               <p>+86 13297959213</p>
             </div>
             <div class="addr-item">
-              <p class="itl">邮箱：</p>
+              <p class="itl">{{$t('contact.email')}}</p>
               <p>3589781688@qq.com</p>
             </div>
           </Col>

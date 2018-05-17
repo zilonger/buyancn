@@ -3,29 +3,15 @@
     <Pagetop :bgimage="bgimg" :toptitle="title"></Pagetop>
     <div class="center-content">
       <h4 class="positions">
-        <Icon type="android-cart"></Icon> 产品中心
+        <Icon type="android-cart"></Icon> {{$t('product.title')}}
       </h4>
       <div class="probox">
         <Row type="flex" justify="space-around">
-          <Col :xs="24" :sm="7">
+          <Col :xs="24" :sm="7" class="pros" v-for="(item,index) in products" key="index">
             <a href="javascript:void(0)" class="proitem">
-              <img src="http://via.placeholder.com/640x600" alt="">
-              <h4>惠而浦 MWA268SL 微波 烧烤 解冻 极速启动 童锁</h4>
-              <p>惠而浦美国百年家电 105年感谢您的陪伴！惠而浦百年经典纪念款微波炉MAX系列，3D微波立体加热、石英烧烤健康美味、快速解冻均匀受热、一键启动简易便捷。</p>
-            </a>
-          </Col>
-          <Col :xs="24" :sm="7">
-            <a href="javascript:void(0)" class="proitem">
-              <img src="http://via.placeholder.com/640x600" alt="">
-              <h4>惠而浦 MWA268SL 微波 烧烤 解冻 极速启动 童锁</h4>
-              <p>惠而浦美国百年家电 105年感谢您的陪伴！惠而浦百年经典纪念款微波炉MAX系列，3D微波立体加热、石英烧烤健康美味、快速解冻均匀受热、一键启动简易便捷。</p>
-            </a>
-          </Col>
-          <Col :xs="24" :sm="7">
-            <a href="javascript:void(0)" class="proitem">
-              <img src="http://via.placeholder.com/640x600" alt="">
-              <h4>惠而浦 MWA268SL 微波 烧烤 解冻 极速启动 童锁</h4>
-              <p>惠而浦美国百年家电 105年感谢您的陪伴！惠而浦百年经典纪念款微波炉MAX系列，3D微波立体加热、石英烧烤健康美味、快速解冻均匀受热、一键启动简易便捷。</p>
+              <img :src="item.image" alt="">
+              <h4>{{item.title}}</h4>
+              <p>{{item.text}}</p>
             </a>
           </Col>
         </Row>
@@ -45,7 +31,39 @@ export default {
   data () {
     return {
       bgimg: '../../static/images/page_top1.jpg',
-      title: 'Product Center'
+      title: 'Product Center',
+      products: [
+        {
+          image: 'http://via.placeholder.com/640x600',
+          title: this.$t('product.goods1.title'),
+          text: this.$t('product.goods1.text')
+        },
+        {
+          image: 'http://via.placeholder.com/640x600',
+          title: this.$t('product.goods2.title'),
+          text: this.$t('product.goods2.text')
+        },
+        {
+          image: 'http://via.placeholder.com/640x600',
+          title: this.$t('product.goods3.title'),
+          text: this.$t('product.goods3.text')
+        },
+        {
+          image: 'http://via.placeholder.com/640x600',
+          title: this.$t('product.goods4.title'),
+          text: this.$t('product.goods4.text')
+        },
+        {
+          image: 'http://via.placeholder.com/640x600',
+          title: this.$t('product.goods5.title'),
+          text: this.$t('product.goods5.text')
+        },
+        {
+          image: 'http://via.placeholder.com/640x600',
+          title: this.$t('product.goods6.title'),
+          text: this.$t('product.goods6.text')
+        }
+      ]
     }
   }
 }
@@ -78,5 +96,8 @@ export default {
     color: #858b9a;
     padding: 0 5px 10px 5px;
     line-height: 16px;
+  }
+  .pros{
+    margin-bottom: 15px;
   }
 </style>

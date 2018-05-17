@@ -3,11 +3,11 @@
     <Row class="footcontent">
       <Col :xs="24" :sm="12">
         <ul class="footlist">
-          <h4><a href="/">首页</a></h4>
-          <li><a href="/about">公司简介</a></li>
-          <li><a href="/products">产品中心</a></li>
-          <li><a href="/contact">联系我们</a></li>
-          <li class="langs" style="display: none">
+          <h4><a href="/">{{$t('web.home')}}</a></h4>
+          <li><a href="/about">{{$t('about.title')}}</a></li>
+          <li><a href="/products">{{$t('product.title')}}</a></li>
+          <li><a href="/contact">{{$t('contact.title')}}</a></li>
+          <li class="langs">
             <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>
@@ -26,7 +26,7 @@
       </Col>
       <Col :xs="24" :sm="12">
         <div class="ftwrap">
-          <h3 class="ft">不言科技</h3>
+          <h3 class="ft">{{$t('web.abbr')}}</h3>
           <a href="tel:13297959213" class="ft">
             <Icon type="ios-telephone"></Icon>
             +86 13297959213
@@ -38,7 +38,7 @@
         </div>
       </Col>
       <Col :xs="24" class="copyright">
-        <p>Copyright ©2018 buyancn.com 版权所有</p>
+        <p>Copyright ©2018 buyancn.com {{$t('web.copyright')}}</p>
       </Col>
     </Row>
   </footer>

@@ -16,7 +16,7 @@
             <li><a href="/about">{{$t('about.title')}}</a></li>
             <li><a href="/products">{{$t('product.title')}}</a></li>
             <li><a href="/contact">{{$t('contact.title')}}</a></li>
-            <li>
+            <li class="langs">
               <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>
@@ -37,7 +37,7 @@
             <li class="nav-item"><a href="/about">{{$t('about.title')}}</a></li>
             <li class="nav-item"><a href="/products">{{$t('product.title')}}</a></li>
             <li class="nav-item"><a href="/contact">{{$t('contact.title')}}</a></li>
-            <li class="nav-item">
+            <li class="nav-item langs">
               <Dropdown @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>

@@ -12,23 +12,28 @@
           </Col>
           <Col :xs="24" :sm="10">
             <div class="addr-item" style="font-weight: bold;">{{$t('contact.companyName')}}</div>
-            <div class="addr-item">
+            <div class="addr-item contactaddress">
+              <Icon type="paper-airplane" class="icons"></Icon>
               <p class="itl">{{$t('contact.address')}}</p>
               <p>{{$t('contact.addressPart1')}}<br>{{$t('contact.addressPart2')}}</p>
             </div>
-            <div class="addr-item">
+            <div class="addr-item postcode">
+              <Icon type="earth" class="icons"></Icon>
               <p class="itl">{{$t('contact.zipcode')}}</p>
               <p>430205</p>
             </div>
-            <div class="addr-item">
+            <div class="addr-item contactuser">
+              <Icon type="person-stalker" class="icons"></Icon>
               <p class="itl">{{$t('contact.contactUser')}}</p>
               <p>{{$t('contact.user')}}</p>
             </div>
-            <div class="addr-item">
+            <div class="addr-item contactphone">
+              <Icon type="ios-telephone" class="icons"></Icon>
               <p class="itl">{{$t('contact.contactType')}}</p>
               <p>+86 13297959213</p>
             </div>
-            <div class="addr-item">
+            <div class="addr-item contactemail">
+              <Icon type="ios-email" class="icons"></Icon>
               <p class="itl">{{$t('contact.email')}}</p>
               <p>3589781688@qq.com</p>
             </div>
@@ -71,5 +76,10 @@ export default {
   }
   .itl {
     white-space: nowrap;
+  }
+  .icons{
+    font-size: 16px;
+    padding: 3px 10px 0 0;
+    color: #86d102;
   }
 </style>

@@ -29,7 +29,7 @@ const multi = {
 
 const i18n = new VueI18n({
   // locale: 'zhCN', // set locale
-  locale: localStorage.getItem('b_locale'),
+  locale: localStorage.getItem('b_locale') || 'zhCN',
   // messages // set locale messages
   messages: multi
 })

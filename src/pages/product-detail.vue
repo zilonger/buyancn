@@ -3,18 +3,10 @@
     <Pagetop :bgimage="bgimg" :toptitle="title"></Pagetop>
     <div class="center-content">
       <h4 class="positions">
-        <Icon type="android-cart"></Icon> {{$t('product.title')}}
+        <Icon type="android-cart"></Icon> <a href="/products">{{$t('product.title')}}</a> / {{products[id].title}}
       </h4>
       <div class="probox">
-        <Row type="flex" justify="space-around">
-          <Col :xs="24" :sm="7" class="pros" v-for="(item,index) in products" :key="index">
-            <a :href="'/goods/' + index" class="proitem">
-              <div class="img-wrap"><img :src="'../../static/product/' + item.image[0]" alt=""></div>
-              <h4>{{item.title}} <span class="price">{{item.price}}</span></h4>
-              <p>{{item.text}}</p>
-            </a>
-          </Col>
-        </Row>
+        <img v-for="item in products[id].image" :key="item" :src="'../../static/product/' + item" alt="">
       </div>
     </div>
   </div>
@@ -24,7 +16,7 @@
 import Pagetop from '@/components/pagetop'
 
 export default {
-  name: 'Products',
+  name: 'ProductDetail',
   components: {
     Pagetop
   },
@@ -32,6 +24,7 @@ export default {
     return {
       bgimg: '../../static/images/page_top1.jpg',
       title: 'Product Center',
+      id: this.$route.params.id,
       products: [
         {
           image: [
@@ -89,42 +82,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .proitem {
+  .probox img {
+    width: 600px;
     display: block;
-    background-color: #ffffff;
-    padding: 15px;
+    margin: 0 auto 25px;
     border: 1px solid #e9eaec;
-  }
-  .proitem:hover {
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-    border-color: #eee;
-    text-decoration: underline;
-    color: #858b9a;
-  }
-  .img-wrap {
-    /* height: 174px;
-    overflow: hidden; */
-  }
-  .proitem img {
-    width: 100%;
-    display: block;
-  }
-  .proitem h4 {
-    color: #3f424b;
-    font-weight: normal;
-    padding: 10px 5px;
-  }
-  .proitem p {
-    color: #858b9a;
-    padding: 0 5px 10px 5px;
-    line-height: 16px;
-    min-height: 42px;
-  }
-  .pros{
-    margin-bottom: 15px;
-  }
-  .price {
-    color: #86d102;
-    float: right;
   }
 </style>

@@ -7,7 +7,7 @@
       </h4>
       <div class="probox">
         <Row type="flex" justify="space-around">
-          <Col :xs="24" :sm="7" class="pros" v-for="(item,index) in products" key="index">
+          <Col :xs="24" :sm="7" class="pros" v-for="(item,index) in products" :key="index">
             <a href="javascript:void(0)" class="proitem">
               <img :src="item.image" alt="">
               <h4>{{item.title}}</h4>

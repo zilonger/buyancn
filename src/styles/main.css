@@ -29,7 +29,18 @@
     line-height: 30px;
     margin-bottom: 20px;
 }
+.positions a {
+    color: #86d102;
+    font-weight: 400;
+    font-size: 15px;
+}
+.positions a:hover {
+    text-decoration: underline;
+}
+.positions i {
+    margin-right: 5px;
+}
 /* 隐藏多语言选项 */
 .langs {
-    display: none !important;
+    /* display: none !important; */
 }

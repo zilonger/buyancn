@@ -64,7 +64,7 @@ export default {
   data() {
     return {
       navList: false,
-      lang: localStorage.getItem('b_locale') || 'zhCN'
+      lang: localStorage.getItem('b_locale') || 'en'
     };
   },
   methods: {

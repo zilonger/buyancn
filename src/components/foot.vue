@@ -49,7 +49,7 @@ export default {
   name: "Foot",
   data() {
     return {
-      lang: localStorage.getItem('b_locale') || 'zhCN'
+      lang: localStorage.getItem('b_locale') || 'en'
     };
   },
   methods: {

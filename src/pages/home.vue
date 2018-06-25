@@ -20,14 +20,14 @@
         <Row type="flex" justify="space-around">
           <Col :xs="24" :sm="10">
             <div class="infoblock">
-              <h3 class="blocktit">{{$t('about.title')}} <a href="/about">{{$t('home.more')}}></a></h3>
+              <h3 class="blocktit">{{$t('about.title')}} <a href="/about">{{$t('home.more')}}>></a></h3>
               <img src="../../static/images/intro.jpg" alt="">
               <p>{{$t('home.aboutInfo')}}</p>
             </div>
           </Col>
           <Col :xs="24" :sm="10">
             <div class="infoblock">
-              <h3 class="blocktit">{{$t('product.title')}} <a href="/products">{{$t('home.more')}}></a></h3>
+              <h3 class="blocktit">{{$t('product.title')}} <a href="/products">{{$t('home.more')}}>></a></h3>
               <img src="../../static/images/pros.jpg" alt="">
               <p>{{$t('home.productInfo')}}</p>
             </div>

@@ -109,6 +109,7 @@ export default {
   color: #878787;
   padding: 10px;
   position: relative;
+  white-space: nowrap;
 }
 .c_nav li a:hover {
   color: #86d102;

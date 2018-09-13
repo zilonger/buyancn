@@ -119,6 +119,7 @@ export default {
 .blocktit a {
   color: #858b9a;
   float: right;
+  padding: 0 10px;
 }
 .addrpic {
   text-align: center;

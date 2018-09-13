@@ -176,7 +176,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .probox img {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     display: block;
     margin: 0 auto 25px;
     border: 1px solid #e9eaec;

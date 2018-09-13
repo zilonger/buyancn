@@ -8,7 +8,7 @@
           <li><a href="/products">{{$t('product.title')}}</a></li>
           <li><a href="/contact">{{$t('contact.title')}}</a></li>
           <li class="langs">
-            <Dropdown @on-click="setLan">
+            <Dropdown trigger="click" @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>
                   <span v-if="lang == 'zhTW'">繁体中文</span>

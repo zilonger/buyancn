@@ -17,7 +17,7 @@
             <li><a href="/products">{{$t('product.title')}}</a></li>
             <li><a href="/contact">{{$t('contact.title')}}</a></li>
             <li class="langs">
-              <Dropdown @on-click="setLan">
+              <Dropdown trigger="click" @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>
                   <span v-if="lang == 'zhTW'">繁体中文</span>
@@ -38,7 +38,7 @@
             <li class="nav-item"><a href="/products">{{$t('product.title')}}</a></li>
             <li class="nav-item"><a href="/contact">{{$t('contact.title')}}</a></li>
             <li class="nav-item langs">
-              <Dropdown @on-click="setLan">
+              <Dropdown trigger="click" @on-click="setLan">
                 <a href="javascript:void(0)">
                   <span v-if="lang == 'zhCN'">简体中文</span>
                   <span v-if="lang == 'zhTW'">繁体中文</span>
@@ -92,7 +92,10 @@ export default {
 }
 .logobox a{
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 13px;
+}
+.logobox a img{
+  height: 52px;
 }
 .c_nav {
   display: flex;
@@ -105,6 +108,7 @@ export default {
   text-align: center;
 }
 .c_nav li a {
+  height: 38px;
   font-size: 16px;
   color: #878787;
   padding: 10px;
@@ -124,14 +128,18 @@ export default {
   content: "";
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
-  transform: translateY(10px);
+}
+.c_nav li a::before {
+  top: 0;
+  transform: translateY(-10px);
 }
 .c_nav li a::after {
   bottom: 0;
+  transform: translateY(10px);
 }
 .c_nav li a:hover::before {
   opacity: 1;
-  transform: translateY(20px);
+  transform: translateY(0);
 }
 .c_nav li a:hover::after {
   opacity: 1;
@@ -141,6 +149,7 @@ export default {
   display: none;
   height: auto;
   line-height: 39px;
+  transition: all .3s ease-out;
 }
 .moblie_nav .nav-item {
   display: block;

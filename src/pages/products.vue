@@ -9,7 +9,7 @@
         <Row type="flex" justify="space-around">
           <Col :xs="24" :sm="7" class="pros" v-for="(item,index) in products" :key="index">
             <a :href="'/goods/' + index" class="proitem">
-              <div class="img-wrap"><img :src="'../../static/images/products/' + item.image[0]" alt=""></div>
+              <div class="img-wrap"><img :src="'../../static/product/' + item.image[0]" alt=""></div>
               <h4>{{item.title}} <span class="price" style="display: none;">{{item.price}}</span></h4>
               <p>{{item.text}}</p>
             </a>
@@ -34,12 +34,12 @@ export default {
       title: 'Product Center',
       products: [{
         image: [
-          'HN19FDR0005/HN19FDR0005-1.jpg',
-          'HN19FDR0005/HN19FDR0005-2.jpg',
-          'HN19FDR0005/HN19FDR0005-3.jpg',
-          'HN19FDR0005/HN19FDR0005-4.jpg',
-          'HN19FDR0005/HN19FDR0005-5.jpg',
-          'HN19FDR0005/HN19FDR0005-6.jpg'
+          'loosesweater/1.jpg',
+          'loosesweater/2.jpg',
+          'loosesweater/3.jpg',
+          'loosesweater/4.jpg',
+          'loosesweater/5.jpg',
+          'loosesweater/6.jpg'
         ],
         title: this.$t('product.goods1.title'),
         text: this.$t('product.goods1.text'),
@@ -47,13 +47,12 @@ export default {
       },
       {
         image: [
-          'H104FHO0003BU/H104FHO0003BU-1.jpg',
-          'H104FHO0003BU/H104FHO0003BU-2.jpg',
-          'H104FHO0003BU/H104FHO0003BU-3.jpg',
-          'H104FHO0003BU/H104FHO0003BU-4.jpg',
-          'H104FHO0003BU/H104FHO0003BU-5.jpg',
-          'H104FHO0003BU/H104FHO0003BU-6.jpg',
-          'H104FHO0003BU/H104FHO0003BU-7.jpg'
+          'sweater/1.jpg',
+          'sweater/2.jpg',
+          'sweater/3.jpg',
+          'sweater/4.jpg',
+          'sweater/5.jpg',
+          'sweater/6.jpg'
         ],
         title: this.$t('product.goods2.title'),
         text: this.$t('product.goods2.text'),
@@ -61,10 +60,11 @@ export default {
       },
       {
         image: [
-          'HM09FEK0002BK/HM09FEK0002BK-1.jpg',
-          'HM09FEK0002BK/HM09FEK0002BK-2.jpg',
-          'HM09FEK0002BK/HM09FEK0002BK-3.jpg',
-          'HM09FEK0002BK/HM09FEK0002BK-4.jpg'
+          'coat/1.jpg',
+          'coat/2.jpg',
+          'coat/3.jpg',
+          'coat/4.jpg',
+          'coat/5.jpg'
         ],
         title: this.$t('product.goods3.title'),
         text: this.$t('product.goods3.text'),
@@ -72,10 +72,10 @@ export default {
       },
       {
         image: [
-          'HM09FEK0003BK/HM09FEK0003BK-1.jpg',
-          'HM09FEK0003BK/HM09FEK0003BK-2.jpg',
-          'HM09FEK0003BK/HM09FEK0003BK-3.jpg',
-          'HM09FEK0003BK/HM09FEK0003BK-4.jpg'
+          'shirt/1.jpg',
+          'shirt/2.jpg',
+          'shirt/3.jpg',
+          'shirt/4.jpg'
         ],
         title: this.$t('product.goods4.title'),
         text: this.$t('product.goods4.text'),
@@ -83,8 +83,11 @@ export default {
       },
       {
         image: [
-          'H805FBV0001BK/H805FBV0001BK-1.jpg',
-          'H805FBV0001BK/H805FBV0001BK-2.jpg'
+          'blackbag/1.jpg',
+          'blackbag/2.jpg',
+          'blackbag/3.jpg',
+          'blackbag/4.jpg',
+          'blackbag/5.jpg'
         ],
         title: this.$t('product.goods5.title'),
         text: this.$t('product.goods5.text'),
@@ -92,8 +95,10 @@ export default {
       },
       {
         image: [
-          'H805FBV0001GY/H805FBV0001GY-1.jpg',
-          'H805FBV0001GY/H805FBV0001GY-2.jpg'
+          'brownbag/1.jpg',
+          'brownbag/2.jpg',
+          'brownbag/3.jpg',
+          'brownbag/4.jpg'
         ],
         title: this.$t('product.goods6.title'),
         text: this.$t('product.goods6.text'),
@@ -101,9 +106,11 @@ export default {
       },
       {
         image: [
-          'H805FBV0001OR/H805FBV0001OR-1.jpg',
-          'H805FBV0001OR/H805FBV0001OR-2.jpg',
-          'H805FBV0001OR/H805FBV0001OR-3.jpg'
+          'woolbag/1.jpg',
+          'woolbag/2.jpg',
+          'woolbag/3.jpg',
+          'woolbag/4.jpg',
+          'woolbag/5.jpg'
         ],
         title: this.$t('product.goods7.title'),
         text: this.$t('product.goods7.text'),
@@ -111,8 +118,12 @@ export default {
       },
       {
         image: [
-          'H805FBV0001PK/H805FBV0001PK-1.jpg',
-          'H805FBV0001PK/H805FBV0001PK-2.jpg'
+          'lunchbag/1.jpg',
+          'lunchbag/2.jpg',
+          'lunchbag/3.jpg',
+          'lunchbag/4.jpg',
+          'lunchbag/5.jpg',
+          'lunchbag/6.jpg'
         ],
         title: this.$t('product.goods8.title'),
         text: this.$t('product.goods8.text'),
@@ -120,9 +131,12 @@ export default {
       },
       {
         image: [
-          'H805FBV0001RD/H805FBV0001RD-1.jpg',
-          'H805FBV0001RD/H805FBV0001RD-2.jpg',
-          'H805FBV0001RD/H805FBV0001RD-3.jpg'
+          'tablecloth/1.jpg',
+          'tablecloth/2.jpg',
+          'tablecloth/3.jpg',
+          'tablecloth/4.jpg',
+          'tablecloth/5.jpg',
+          'tablecloth/6.jpg'
         ],
         title: this.$t('product.goods9.title'),
         text: this.$t('product.goods9.text'),
@@ -130,9 +144,9 @@ export default {
       },
       {
         image: [
-          'H805FBV0001YE/H805FBV0001YE-1.jpg',
-          'H805FBV0001YE/H805FBV0001YE-2.jpg',
-          'H805FBV0001YE/H805FBV0001YE-3.jpg'
+          'skirt/1.jpg',
+          'skirt/2.jpg',
+          'skirt/3.jpg'
         ],
         title: this.$t('product.goods10.title'),
         text: this.$t('product.goods10.text'),
@@ -140,10 +154,12 @@ export default {
       },
       {
         image: [
-          'H805FBV0004/H805FBV0004-1.jpg',
-          'H805FBV0004/H805FBV0004-2.jpg',
-          'H805FBV0004/H805FBV0004-3.jpg',
-          'H805FBV0004/H805FBV0004-4.jpg'
+          'sandals/1.jpg',
+          'sandals/2.jpg',
+          'sandals/3.jpg',
+          'sandals/4.jpg',
+          'sandals/5.jpg',
+          'sandals/6.jpg'
         ],
         title: this.$t('product.goods11.title'),
         text: this.$t('product.goods11.text'),
@@ -151,26 +167,13 @@ export default {
       },
       {
         image: [
-          'H805FBV0008BR/H805FBV0008BR-1.jpg',
-          'H805FBV0008BR/H805FBV0008BR-2.jpg',
-          'H805FBV0008BR/H805FBV0008BR-3.jpg',
-          'H805FBV0008BR/H805FBV0008BR-4.jpg',
-          'H805FBV0008BR/H805FBV0008BR-5.jpg'
+          'handmadeshoe/1.jpg',
+          'handmadeshoe/2.jpg',
+          'handmadeshoe/3.jpg',
+          'handmadeshoe/4.jpg'
         ],
         title: this.$t('product.goods12.title'),
         text: this.$t('product.goods12.text'),
-        price: '$9.99'
-      },
-      {
-        image: [
-          'H805FBV0009/H805FBV0009-1.jpg',
-          'H805FBV0009/H805FBV0009-2.jpg',
-          'H805FBV0009/H805FBV0009-3.jpg',
-          'H805FBV0009/H805FBV0009-4.jpg',
-          'H805FBV0009/H805FBV0009-5.jpg'
-        ],
-        title: this.$t('product.goods13.title'),
-        text: this.$t('product.goods13.text'),
         price: '$9.99'
       }
     ]
@@ -195,8 +198,8 @@ export default {
   color: #858b9a;
 }
 .img-wrap {
-  /* height: 174px;
-    overflow: hidden; */
+  height: 220px;
+  overflow: hidden;
 }
 .proitem img {
   width: 100%;

@@ -29,56 +29,52 @@ export default {
   product: {
     title: 'Products center',
     goods1: {
-      title: 'Simple home apron',
-      text: 'Simple Home Apron - Denim Blue'
+      title: 'Loose hooded collar sweater versatile top',
+      text: 'Loose hooded collar sweater versatile top - multiple colors'
     },
     goods2: {
-      title: 'Denim apron',
-      text: 'wq30164 Coffee Studio Internet Cafe Working Denim Apron'
+      title: 'Semi-high collar slim body tight sweater',
+      text: 'Semi-high collar slim body tight sweater - multiple colors'
     },
     goods3: {
-      title: 'Chef waiter apron',
-      text: 'Antifouling and anti-abrasion chef waiter Halter polyester apron'
+      title: 'Long Sleeve T-Shirt Women\'s Striped T-Shirt',
+      text: 'Long Sleeve Women\'s T-Shirt Women\'s Striped T-Shirt - Multiple Colors'
     },
     goods4: {
-      title: 'Leather multipurpose apron',
-      text: 'Super-sturdy waterproof and oil-proof anti-fouling Halter leather multi-purpose apron'
+      title: 'v collar large size loose bottoming shirt top',
+      text: 'v collar large size loose solid color long sleeve bottoming shirt top'
     },
     goods5: {
-      title: 'Thick Microwave Gloves Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs)',
-      text: 'YD150702 Thick Microwave Gloves Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs) Black'
+      title: 'Black fashion simple one shoulder diagonal winter women\'s bag',
+      text: 'Black fashion simple one shoulder diagonal casual women\'s bag large capacity winter women\'s bag'
     },
     goods6: {
-      title: 'Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs)',
-      text: 'YD150702 Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs) Gray'
+      title: 'Brown fashion simple one shoulder diagonal winter handbag',
+      text: 'Brown fashion simple single shoulder diagonal casual handbag large capacity winter female bag'
     },
     goods7: {
-      title: 'Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs)',
-      text: 'YD150702 Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs) Orange'
+      title: 'Korean fashion shoulder bag knit handbag',
+      text: 'Korean fashion shoulder bag wool bag hand-knit handbag'
     },
     goods8: {
-      title: 'Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs)',
-      text: 'YD150702 Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs) Pink'
+      title: 'Cute insulated bag, lunch bag, lunch bag',
+      text: 'Cute Insulation Bag Bento Lunch Bag Ice Bag Portable Aluminum Film Lunch Box Picnic Bag'
     },
     goods9: {
-      title: 'Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs)',
-      text: 'YD150702 Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs) Red red'
+      title: 'Solid color cotton and linen waterproof tablecloth rectangular tablecloth',
+      text: 'Solid color cotton and linen waterproof tablecloth anti-fouling and oil-proof cloth table cloth anti-scalding disposable rectangular coffee table cloth'
     },
     goods10: {
-      title: 'Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs)',
-      text: 'YD150702 Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs) Yellow'
+      title: 'Skirt pleated skirt',
+      text: 'Skirt pleated skirt skirt tutu'
     },
     goods11: {
-      title: 'Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs)',
-      text: 'YD150628 Thick Microwave Oven Bake Oven Special Heat Insulation Anti-Hot And High Temperature (2pcs) Butterfly Color'
+      title: 'Rabbit fur buckle high heel sandals',
+      text: 'Rabbit fur buckle high heel sandals - multiple colors'
     },
     goods12: {
-      title: 'Baking High Temperature Microwave Oven Gloves Heat Insulation Anti-slick (2pcs)',
-      text: 'YD150613 Baking High Temperature Microwave Oven Gloves Heat Insulation Anti-slick (2pcs) Candy Series/Brown'
-    },
-    goods13: {
-      title: 'Microwave Oven Heatproof Gloves Japanese Flower Grass Heater Gloves (2pcs)',
-      text: 'Microwave Oven Heatproof Gloves Japanese Flower Grass Heater Gloves (2pcs) Japanese flower color'
+      title: 'Sheepskin women\'s shoes',
+      text: 'Sheepskin women\'s shoes leather shoes casual shoes'
     }
   },
   web: {
